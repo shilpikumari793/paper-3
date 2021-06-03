@@ -18,12 +18,13 @@ void printUnion(int arr1[], int arr2[], int k, int p)
         }
     }
  
-    /* Print remaining elements of the larger array */
+    /* Print remaining elements  */
     while (i < k)
         printf(" %d ", arr1[i++]);
     while (j < p)
         printf(" %d ", arr2[j++]);
 }
+//function to print intersection
 void printIntersection(int arr1[], int arr2[], int m, int n)
 {
     int i = 0, j = 0;
