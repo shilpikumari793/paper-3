@@ -1,14 +1,10 @@
 // C program to rotate an array by d elements
 #include <stdio.h>
-void leftRotate(int arr[], int n)
-{
-    int temp = arr[0], i;
-    for (i = 0; i < n - 1; i++)
-        arr[i] = arr[i + 1];
-    arr[n-1] = temp;
-}
 
-//Function to left rotate arr[] of size n by d
+void leftRotate(int arr[], int n);// left rotate by one
+ 
+//Function to left rotate arr[]
+//of size n by d
 void leftRotate(int arr[], int d, int n)
 {
     int i;
@@ -16,6 +12,13 @@ void leftRotate(int arr[], int d, int n)
         leftRotate(arr, n);
 }
  
+void leftRotate(int arr[], int n)
+{
+    int temp = arr[0], i;
+    for (i = 0; i < n - 1; i++)
+        arr[i] = arr[i + 1];
+    arr[n-1] = temp;
+}
  
 //function to print an array
 void printArray(int arr[], int n)
@@ -24,7 +27,6 @@ void printArray(int arr[], int n)
     for (i = 0; i < n; i++)
         printf("%d ", arr[i]);
 }
-
 /* Driver program to test above functions */
 int main()
 {
