@@ -51,7 +51,6 @@ int main()
     printUnion(arr1, arr2, m, n);
     printf("\n");
     printIntersection(arr1,arr2,m,n);
-    getchar();
     return 0;
 }
 
